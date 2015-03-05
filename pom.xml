@@ -5,7 +5,7 @@
 	<artifactId>zk8-polymer-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<zk.version>8.0.0.FL.20150211</zk.version>
+		<zk.version>8.0.0.FL.20150217</zk.version>
 		<commons-io>2.1</commons-io>
 		<zkcharts.version>2.0.0.1-Eval</zkcharts.version>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
