@@ -19,16 +19,14 @@
        </hlayout>
        <n:script>
        	zk.afterLoad(function() {
-       		var cal = jq('#cal')[0];
-       		var selDate;
-       		cal.addEventListener('d-calendar-date-selected', function(evt) {
-	        	selDate = evt.detail.date;
+       		jq('#cal').on('d-calendar-date-selected', function(evt) {
+       			var selDate = evt.originalEvent.detail.date;
 	        	if (selDate instanceof Date) {
 		        	zkbind.$('$cal').command('doDateSelected', 
 		        		{date: selDate.getDate(), month: selDate.getMonth() + 1,
 		        		 year: selDate.getFullYear()});
 	        	}
-	        });
+       		});
        	});
        </n:script>
 </window>
